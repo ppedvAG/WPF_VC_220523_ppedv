@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personendatenbank", "Person
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M03_Container", "Container\M03_Container.csproj", "{10585497-01F8-4C47-81AD-9816843F7698}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M04_EventRouting", "EventRouting\M04_EventRouting.csproj", "{37FA3DBF-515A-4CA3-BE98-FEA0BFDC683C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyBinding", "PropertyBinding\PropertyBinding.csproj", "{759A80C6-F705-4F89-B62C-8B93FC497D2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{10585497-01F8-4C47-81AD-9816843F7698}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10585497-01F8-4C47-81AD-9816843F7698}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10585497-01F8-4C47-81AD-9816843F7698}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37FA3DBF-515A-4CA3-BE98-FEA0BFDC683C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37FA3DBF-515A-4CA3-BE98-FEA0BFDC683C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37FA3DBF-515A-4CA3-BE98-FEA0BFDC683C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37FA3DBF-515A-4CA3-BE98-FEA0BFDC683C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{759A80C6-F705-4F89-B62C-8B93FC497D2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{759A80C6-F705-4F89-B62C-8B93FC497D2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{759A80C6-F705-4F89-B62C-8B93FC497D2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{759A80C6-F705-4F89-B62C-8B93FC497D2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
