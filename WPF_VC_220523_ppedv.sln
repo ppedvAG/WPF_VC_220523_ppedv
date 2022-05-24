@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M01_Grundlagen", "HelloWPF\M01_Grundlagen.csproj", "{BF6B50B2-318F-41FD-93A5-438114B00EB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M01_Grundlagen", "HelloWPF\M01_Grundlagen.csproj", "{BF6B50B2-318F-41FD-93A5-438114B00EB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M02_Controls", "Controls\M02_Controls.csproj", "{878EEEC7-CFA3-45AE-9739-60D8D49066BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M02_Controls", "Controls\M02_Controls.csproj", "{878EEEC7-CFA3-45AE-9739-60D8D49066BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personendatenbank", "Personendatenbank\Personendatenbank.csproj", "{DAB40CE1-05E9-46E5-95DD-3D4CAABEE547}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personendatenbank", "Personendatenbank\Personendatenbank.csproj", "{DAB40CE1-05E9-46E5-95DD-3D4CAABEE547}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M03_Container", "Container\M03_Container.csproj", "{10585497-01F8-4C47-81AD-9816843F7698}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M03_Container", "Container\M03_Container.csproj", "{10585497-01F8-4C47-81AD-9816843F7698}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M04_EventRouting", "EventRouting\M04_EventRouting.csproj", "{37FA3DBF-515A-4CA3-BE98-FEA0BFDC683C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M04_EventRouting", "EventRouting\M04_EventRouting.csproj", "{37FA3DBF-515A-4CA3-BE98-FEA0BFDC683C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M05_PropertyBinding", "PropertyBinding\M05_PropertyBinding.csproj", "{759A80C6-F705-4F89-B62C-8B93FC497D2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M05_PropertyBinding", "PropertyBinding\M05_PropertyBinding.csproj", "{759A80C6-F705-4F89-B62C-8B93FC497D2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPicker", "ColorPicker\ColorPicker.csproj", "{D56E91B4-4803-4D95-8883-498F2CDD571B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorPicker", "ColorPicker\ColorPicker.csproj", "{D56E91B4-4803-4D95-8883-498F2CDD571B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBinding", "DataBinding\DataBinding.csproj", "{EFD54DA3-097F-4FB8-83E1-36C73AAF1A16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{D56E91B4-4803-4D95-8883-498F2CDD571B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D56E91B4-4803-4D95-8883-498F2CDD571B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D56E91B4-4803-4D95-8883-498F2CDD571B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFD54DA3-097F-4FB8-83E1-36C73AAF1A16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFD54DA3-097F-4FB8-83E1-36C73AAF1A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFD54DA3-097F-4FB8-83E1-36C73AAF1A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFD54DA3-097F-4FB8-83E1-36C73AAF1A16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
