@@ -80,5 +80,10 @@ namespace Personendatenbank
         {
             this.Close();
         }
+
+        private void Btn_Abbruch_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

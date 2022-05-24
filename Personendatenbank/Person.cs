@@ -33,7 +33,6 @@ namespace Personendatenbank
         public Person()
         {
             this.Geburtsdatum = DateTime.Now;
-            this.Geschlecht = Gender.Weiblich;
         }
     }
 }

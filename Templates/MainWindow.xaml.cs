@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Resources_Styles
+namespace Templates
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,12 +24,14 @@ namespace Resources_Styles
         public MainWindow()
         {
             InitializeComponent();
+
+            this.DataContext = this;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            //Manipulation einer Ressource über deren Container und Key (Objekte, welche dynamisch angebunden sind, übernehmen sofort die Veränderung)
-            Spl_Main.Resources["Scb_LightGreen"] = new SolidColorBrush(Colors.LightBlue);
-        }
+        public ObservableCollection<Person> Personenliste { get; set; } = new ObservableCollection<Person>()
+            {
+                new Person(){Vorname="Hannes", Nachname="Müller", Alter=56},
+                new Person(){Vorname="Anna", Nachname="Schmidt", Alter=24}
+            };
     }
 }
