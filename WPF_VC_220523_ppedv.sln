@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M05_PropertyBinding", "Prop
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorPicker", "ColorPicker\ColorPicker.csproj", "{D56E91B4-4803-4D95-8883-498F2CDD571B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBinding", "DataBinding\DataBinding.csproj", "{EFD54DA3-097F-4FB8-83E1-36C73AAF1A16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M06_DataBinding", "DataBinding\M06_DataBinding.csproj", "{EFD54DA3-097F-4FB8-83E1-36C73AAF1A16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
