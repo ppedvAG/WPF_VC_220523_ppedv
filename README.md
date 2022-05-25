@@ -9,3 +9,4 @@ Kurs-Beispiele WPF-Kurs vom 23.05.22
         [WPF-Dokumentation](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/?view=netdesktop-6.0/)
         [CodeShare](https://codeshare.io/)
         [RegExr](https://regexr.com/)
+        [MVVM-Bsp](https://github.com/ppedvAG/WPF_VC_210520_MvvmSampleProject)
