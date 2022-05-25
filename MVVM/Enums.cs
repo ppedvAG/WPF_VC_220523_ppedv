@@ -7,4 +7,5 @@ using System.Threading.Tasks;
 namespace MVVM
 {
     public enum Gender { Männlich, Weiblich, Divers }
+    public enum Sprache { Deutsch, Englisch }
 }

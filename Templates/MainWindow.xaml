@@ -46,7 +46,7 @@
         <!--Globales DataTemplate für Personen-Objekte-->
         <DataTemplate DataType="{x:Type local:Person}">
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="{Binding Vorname}"/>
+                <TextBlock Text="{Binding Path=Vorname}"/>
                 <TextBlock Text=" "/>
                 <TextBlock Text="{Binding Nachname}"/>
                 <TextBlock Text=" "/>
