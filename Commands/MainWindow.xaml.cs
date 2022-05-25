@@ -24,37 +24,36 @@ namespace Commands
         {
             InitializeComponent();
 
+            //Initialisierung der Commands
+            CloseCmd = new CloseCommand();
+            OeffnenCmd = new CustomCommand
+                (
+                    //Übergabe der Execute()-Logik
+                    p => (new MainWindow()).Show(),
+                    //Übergabe der CanExecute()-Logik
+                    p => (p as string).Length >= 1
+                );
+
+            //Setzen des DataContext
             this.DataContext = this;
         }
 
-        public CloseCommand CloseCmd { get; set; } = new CloseCommand();
+        //Commandproperties 
+        public CloseCommand CloseCmd { get; set; }
+        public CustomCommand OeffnenCmd { get; set; }
 
-        public CustomCommand OpenCmd { get; set; } = new CustomCommand
-            (
-                //parameter => new MainWindow().Show(),
-                //parameter =>
-                //{
-                //    new MainWindow().Show();
-                    //...
-                //}
-
-                OpenCmdExecute,
-
-                //p => { return (p as string).Length >= 1; }
-
-                OpenCmdCanExecute
-            );
+        public static RoutedUICommand MyCmd { get; set; } = new RoutedUICommand("Mein Command", "Mein Command", typeof(MainWindow));
 
 
-
-        private static void OpenCmdExecute(object parameter)
+        //Logik des Delete-Commands
+        private void Delete_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
-            new MainWindow().Show();
+            e.CanExecute = !string.IsNullOrEmpty((e.OriginalSource as TextBox).Text);
         }
 
-        private static bool OpenCmdCanExecute(object parameter)
+        private void Delete_Executed(object sender, ExecutedRoutedEventArgs e)
         {
-            return (parameter as String).Length >= 1;
+            (e.OriginalSource as TextBox).Text = "";
         }
     }
 }
