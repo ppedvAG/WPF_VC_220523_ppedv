@@ -42,7 +42,7 @@ namespace Personendatenbank
 
                     case nameof(Vorname):
                         if (Vorname.Length == 0 || Vorname.Length > 50) return "Bitte geben Sie Ihren Vornamen ein.";
-                        if (!Vorname.All(x => Char.IsLetter(x))) return "Der Vorname darf nur Buchstaben enthalten.";
+                        if (!Vorname.All(CheckForLetter)) return "Der Vorname darf nur Buchstaben enthalten.";
                         if (Char.IsLower(Vorname.First())) return "Der Vorname muss mit einem Großbuchstaben beginnen";
                         break;
 
@@ -64,6 +64,11 @@ namespace Personendatenbank
 
                 return String.Empty;
             }
+        }
+
+        private static bool CheckForLetter(char c)
+        {
+            return Char.IsLetter(c);
         }
 
 

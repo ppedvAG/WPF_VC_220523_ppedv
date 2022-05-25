@@ -38,10 +38,13 @@ namespace Personendatenbank
 
         private void Btn_Loeschen_Click(object sender, RoutedEventArgs e)
         {
-            Person person = Dgd_Personen.SelectedItem as Person;
+            if (Dgd_Personen.SelectedItem is Person)
+            {
+                Person person = Dgd_Personen.SelectedItem as Person;
 
-            if (MessageBox.Show($"Soll {person.Vorname} {person.Nachname} wirklich gelöscht werden?", $"{person.Vorname} {person.Nachname} löschen?", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
-                Personenliste.Remove(person);
+                if (MessageBox.Show($"Soll {person.Vorname} {person.Nachname} wirklich gelöscht werden?", $"{person.Vorname} {person.Nachname} löschen?", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+                    Personenliste.Remove(person);
+            }
         }
 
         private void Btn_Neu_Click(object sender, RoutedEventArgs e)
