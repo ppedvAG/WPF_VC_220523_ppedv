@@ -72,6 +72,7 @@ namespace Personendatenbank
             if (neuePerson.Verheiratet) ausgabe = ausgabe + "\nIst verheiratet";
             if (MessageBox.Show(ausgabe + "\nAbspeichern?", neuePerson.Vorname + " " + neuePerson.Nachname, MessageBoxButton.YesNo, MessageBoxImage.Information) == MessageBoxResult.Yes)
             {
+                this.DialogResult = true;
                 this.Close();
             }
         }
@@ -79,11 +80,6 @@ namespace Personendatenbank
         private void Btn_Abbruch_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
-        }
-
-        private void Btn_Abbruch_Click_1(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

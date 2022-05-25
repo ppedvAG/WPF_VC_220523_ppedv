@@ -39,6 +39,7 @@
                             ObjectInstance="{StaticResource Odp_Colors}"/>
 
         <local:ColorsConverter x:Key="colorsConverter"/>
+        
         <ControlTemplate x:Key="CtpError">
             <StackPanel Orientation="Horizontal">
                 <Border BorderBrush="Red" BorderThickness="1" x:Name="BdrAep">
